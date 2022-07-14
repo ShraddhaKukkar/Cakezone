@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Pacifico&display=swap');
+
+:root {
+    --primary: #E88F2A;
+    --secondary: #FAF3EB;
+    --dark: #2B2825;
+}
+
+.font-secondary{
+    font-family: 'Pacifico', cursive;
+}
+
+.font-primary{
+    font-family: 'Oswald', sans-serif;
+}
+
+.text-primary{
+    color: var(--primary) !important;
+}
+
+.text-secondary{
+    color: #fff !important;
+}
+
+.bg-dark {
+    background-color: #2b2825!important;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+.bg-secondary{
+    background-color:var(--secondary) !important;
+}
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+.icons i{
+    color: var(--primary);
+    font-size: 32px;
+}
+div i{
+    font-size: 25px;
+}
+
+.border-inner {
+    position: relative;
+}
+
+.border-inner * {
+    position: relative;
+    z-index: 1;
+}
+
+.border-inner::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    background: none;
+    border: 1px solid var(--secondary);
+    z-index: 0;
+}
+
+.banner-img{
+    background: url(../Img/hero.jpg) center right no-repeat;
+    background-size: cover;
+}
+
+.nav-link{
+    color: #fff !important;
+    padding: 15px !important;
+    font-size:18px;
+}
+.navbar-nav a.active{
+    color: var(--primary) !important;
+}
+
+.display-6{
+    letter-spacing: 2px;
+}
+
+.divider::before{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width:60px;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 0;
+    background-color: var(--primary);
+
+}
+
+.divider::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width:180px;
+    left: 50%;
+    margin-left: -90px;
+    bottom: 4px;
+    background-color: var(--primary);
+}
+
+.bg-img{
+    background: url(../Img/bg.jpg) center center no-repeat;
+}
+
+.team-item img {
+    transition: .5s;
+}
+
+.team-item:hover img {
+    transform: scale(1.1);
+    filter: blur(5px);
+}
+
+.team-item .team-overlay {
+    transition: .5s;
+    opacity: 0;
+}
+
+.team-item:hover .team-overlay{
+    opacity: 1;
+}
+.team-item i{
+    font-size: 18px;
+}
+
+.team-item a:hover{
+    opacity: .8;
+}
+.team-item i:hover{
+    color: #2b2825;
+}
+
+.prlx-img {
+    background: url(../Img/offer.jpg) center center no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+.fa-solid{
+    font-size: 16px !important;
+}
+.testimonial-carousel .owl-dots {
+    height: 45px;
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative !important;
+    display: inline-block;
+    margin: 0 2px;
+    width: 10px;
+    height: 25px;
+    background: #DDDDDD !important;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    height: 45px;
+    background: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-item .testimonial-item {
+    opacity: .1;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+    opacity: 1;
+}
+
+.b-img{
+    background: url(../Img/bg.jpg) center right no-repeat;
+    background-size: cover;
+}
+
+.footer-icon i {
+    font-size: 18px;
+}
+
+.social-icon .border-inner::before{
+top:7px;
+bottom: 7px;
+right: 7px;
+left: 7px;
+}
+.social-icon i:hover{
+    color:#2B2825 !important;
+}
